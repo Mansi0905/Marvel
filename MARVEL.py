@@ -1,7 +1,7 @@
 import random as r
 
 def format_movie_title(title, guessed_letters):
-    # Replace unguessed letters with '_', keep special characters
+    # Replace unguessed letters with '_', keep special characterss
     return ''.join([char if char in guessed_letters or not char.isalpha() else '_' for char in title])
 
 def display_title(title, guessed_letters, incorrect_guesses):
